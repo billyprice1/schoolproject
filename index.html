@@ -8,18 +8,24 @@
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 	</head>
-
+	<script>
+	console.log("This site is made by Billy-George")
+	function myFunction() {
+  document.getElementById("demo").innerHTML = "I really don't want to have this button here but .. ";
+}
+	</script>
 	<body>
 		<nav aria-label="breadcrumb">
-			<ol class="breadcrumb">
-   				<li class="breadcrumb-item"><a href="index.html">Home</a></li>
-    				<li class="breadcrumb-item"><a href="overview.html">In Depth overview </a></li>
-				<li class="breadcrumb-item"><a href="cloudvsdedi.html">Cloud VS Dedicated </a></li>
-  			</ol>
-		</nav>
-		
+	    <ol class="breadcrumb">
+	     <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+	      <li class="breadcrumb-item"><a href="overview.html">In Depth overview </a></li>
+	  <li class="breadcrumb-item"><a href="cloudvsdedi.html">Cloud VS Dedicated </a></li>
+	  <li class="breadcrumb-item"><a href="support.html">Support Time Review </a></li>
+	  	  <li class="breadcrumb-item"><a href="aboutus.html">About US </a></li>
+	    </ol>
+	  </nav>
 		<center><h1>Top 3 Hosting Providers</h1>
-			
+
 		<div class="container">
  			<div class="row">
     				<div class="col-sm-4">
@@ -27,19 +33,25 @@
       				<h3>OVH</h3>
       				<p>OVH is a French cloud computing company that offers VPS, dedicated servers and other web services. The company was founded in 1999 by the Klaba family and is headquartered in Roubaix, France</p>
     			</div>
-				
+
     			<div class="col-sm-4">
 				<img src="hetzner.jpg" alt="Hetzer Logo" width="200" height="100">
       				<h3>Hetzner </h3>
       				<p>Hetzner Online GmbH is an Internet hosting company and data center operator based in Gunzenhausen, Germany.</p>
       				<p>Hetzner Online provides dedicated hosting, shared web hosting, virtual private servers, managed servers, domain names, SSL certificates, storage boxes[</p>
     			</div>
-					
+
     			<div class="col-sm-4">
 				<img src="online.png" alt="OVH Logo" width="200" height="100">
-      				<h3>Online SAS </h3> 
+      				<h3>Online SAS </h3>
       				<p>Online SAS (also known as Online.net) is a French Cloud computing and web hosting company, founded by Xavier Niel in 1999 and a 100% subsidiary of the Iliad group. The company provides physical dedicated servers and cloud computing architectures through Dedibox and Scaleway brands, domain registration services through the BookMyName brand, and colocation services in its datacenters through the brand Iliad datacenter.</p>
+
     			</div>
+
+
+<button onclick="myFunction()">Click me</button>
+<p id="demo"></p>
+
 		  </div>
 	</body>
 </html>
